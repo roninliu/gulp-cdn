@@ -12,13 +12,13 @@ gulp-cdn: replace the html files require cdn domain automatically replace all th
 
 ### 1. Installation
 
-`` `Javascript
+```Javascript
 npm install gulp-cdn --save-dev
-`` `
+```
 
 ### 2. gulpfile Configuration
 
-`` `Javascript
+```Javascript
 var gulp = require ('gulp');
 var cdn = require ('gulp-cdn');
 gulp ("default", function () {
@@ -29,20 +29,20 @@ cdn: "http: // cdn"
 }))
 .pipe (gulp.dest ("./ dist /"))
 })
-`` `
+```
 
 ### 3. Using After Effects
 - Replace ago
-`` `Html
+```Html
 <Script src = "http: //localhost/js/common.js"> </ script>
 <Link rel = "stylesheet" type = "text / css" href = "http: //localhost/index.css">
 <Img src = "http: //localhost/img/share.png" alt = "">
-`` `
+```
 
 - Replace after
-`` `Html
+```Html
 <Script src = "http: //cdn/js/common.js"> </ script>
 <Link rel = "stylesheet" type = "text / css" href = "http: //cdn/index.css">
 <Img src = "http: //cdn/img/share.png" alt = "">
-`` `
+```
 ## More questions, please contact Ronin (roninliu@foxmail.com)
