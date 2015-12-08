@@ -1,14 +1,23 @@
-####gulp-cdn
-gulp-cdn：替换html中使用cdn域名的文件
+## gulp-cdn插件
 
-说明文档
+------
+
+gulp-cdn：替换html中需要使用cdn域名的文件，自动替换对应域名的全部url，支持替换javascript，css，img等使用域名引入的html代码
+
+### 说明文档
 [中文](https://github.com/roninliu/gulp-cdn/blob/master/README-ZH.md "中文") | [English](https://github.com/roninliu/gulp-cdn/blob/master/README.md "英文")
 
-- 安装
+
+------
+
+### 1. 安装
+
 ```javascript
 npm install gulp-cdn --save-dev
 ```
-- 使用
+
+### 2. gulpfile配置
+
 ```javascript
 var gulp = require('gulp');
 var cdn = require('gulp-cdn');
@@ -21,17 +30,19 @@ return gulp.src("./src/*.html")
 .pipe(gulp.dest("./dist/"))
 })
 ```
-- 结果
+
+### 3. 使用后效果 
+- 替换前
 ```html
-替换前：
 <script src="http://localhost/js/common.js"></script>
 <link rel="stylesheet" type="text/css" href="http://localhost/index.css">
 <img src="http://localhost/img/share.png" alt="">
 ```
 
+- 替换后
 ```html
-替换后：
 <script src="http://cdn/js/common.js"></script>
 <link rel="stylesheet" type="text/css" href="http://cdn/index.css">
 <img src="http://cdn/img/share.png" alt="">
 ```
+## 更多问题请直接联系Ronin(roninliu@foxmail.com)

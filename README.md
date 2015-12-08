@@ -1,37 +1,48 @@
-#### gulp-cdn
-gulp-cdn: replace html file name used cdn
+## Gulp-cdn plug
 
-Documentation
+------
 
-[中文](https://github.com/roninliu/gulp-cdn/blob/master/README-ZH.md "中文") | [English](https://github.com/roninliu/gulp-cdn/blob/master/README.md "英文")
+gulp-cdn: replace the html files require cdn domain automatically replace all the corresponding domain url, support the replacement javascript, css, img, etc. html code introduced using the domain name
 
-- installation
-`` `javascript
+### Documentation
+[Chinese] (https://github.com/roninliu/gulp-cdn/blob/master/README-ZH.md "Chinese") | [English] (https://github.com/roninliu/gulp-cdn/ blob / master / README.md "English")
+
+
+------
+
+### 1. Installation
+
+`` `Javascript
 npm install gulp-cdn --save-dev
 `` `
-- use
-`` `javascript
+
+### 2. gulpfile Configuration
+
+`` `Javascript
 var gulp = require ('gulp');
 var cdn = require ('gulp-cdn');
 gulp ("default", function () {
 return gulp.src ("./ src / *. html")
 .pipe (cdn ({
-	domain: "http://localhost",
-	cdn: "http://cdn"
+domain: "http: // localhost",
+cdn: "http: // cdn"
 }))
 .pipe (gulp.dest ("./ dist /"))
 })
 `` `
-- result
-`` `html
-Replace before:
-<script src = "http: //localhost/js/common.js"> </ script>
-<link rel = "stylesheet" type = "text / css" href = "http: //localhost/index.css">
-<img src = "http: //localhost/img/share.png" alt = "">
+
+### 3. Using After Effects
+- Replace ago
+`` `Html
+<Script src = "http: //localhost/js/common.js"> </ script>
+<Link rel = "stylesheet" type = "text / css" href = "http: //localhost/index.css">
+<Img src = "http: //localhost/img/share.png" alt = "">
 `` `
 
-`` `html
-Replace after:
-<script src = "http: //cdn/js/common.js"> </ script>
-<link rel = "stylesheet" type = "text / css" href = "http: //cdn/index.css">
-<img src = "http: //cdn/img/share.png" alt = "">
+- Replace after
+`` `Html
+<Script src = "http: //cdn/js/common.js"> </ script>
+<Link rel = "stylesheet" type = "text / css" href = "http: //cdn/index.css">
+<Img src = "http: //cdn/img/share.png" alt = "">
+`` `
+## More questions, please contact Ronin (roninliu@foxmail.com)
