@@ -1,0 +1,30 @@
+{
+  "name": "gulp-cdn",
+  "version": "1.0.1",
+  "description": "use gulp workflow change cdn urls ",
+  "main": "index.js",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roninliu/gulp-cdn.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulp-cdn",
+    "cdn",
+    "url",
+    "gulpplugin"
+  ],
+  "author": "Ronin Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roninliu/gulp-cdn/issues"
+  },
+  "homepage": "https://github.com/roninliu/gulp-cdn#readme",
+  "devDependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.0"
+  }
+}
