@@ -4,7 +4,7 @@ var through = require('through2');
 var gutil = require('gulp-util');
 var PluginError = gutil.PluginError;
 /* 定义插件名称 */
-const PLUGIN_NAME = "gulp-cdn";
+var PLUGIN_NAME = "gulp-cdn";
 
 /**
  * [regexMatchAll 替换域名]
