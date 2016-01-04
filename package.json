@@ -1,6 +1,6 @@
 {
   "name": "gulp-cdn",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "use gulp workflow change cdn urls ",
   "main": "index.js",
   "scripts": {

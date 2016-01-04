@@ -2,7 +2,7 @@
 
 ------
 
-gulp-cdn: replace the html files require cdn domain automatically replace all the corresponding domain url, support the replacement javascript, css, img, etc. html code introduced using the domain name
+gulp-cdn: replace the html files require cdn domain automatically replace all the corresponding domain url, support the replacement javascript, css, img, etc. html, css , javascript code introduced using the domain name
 
 ### Documentation
 [Chinese] (https://github.com/roninliu/gulp-cdn/blob/master/README-ZH.md "Chinese") | [English] (https://github.com/roninliu/gulp-cdn/ blob / master / README.md "English")
