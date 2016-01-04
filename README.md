@@ -19,15 +19,32 @@ npm install gulp-cdn --save-dev
 ### 2. gulpfile Configuration
 
 ```Javascript
-var gulp = require ('gulp');
-var cdn = require ('gulp-cdn');
-gulp ("default", function () {
-return gulp.src ("./ src / *. html")
-.pipe (cdn ({
-domain: "http: // localhost",
-cdn: "http: // cdn"
+var gulp = require('gulp');
+var cdn = require('gulp-cdn');
+gulp("default", function(){
+return gulp.src ("./src/*.html")
+.pipe(cdn({
+domain:"http://localhost",
+cdn:"http://cdn"
 }))
-.pipe (gulp.dest ("./ dist /"))
+.pipe (gulp.dest("./dist/"))
+})
+```
+or array config
+---
+```Javascript
+var gulp = require('gulp');
+var cdn = require('gulp-cdn');
+gulp("default", function(){
+return gulp.src ("./src/*.html")
+.pipe(cdn([{
+domain:"http://localhost",
+cdn:"http://cdn"
+},{
+domain:"http://localhost2",
+cdn:"http://cdn2"
+}]))
+.pipe (gulp.dest("./dist/"))
 })
 ```
 
@@ -45,4 +62,9 @@ cdn: "http: // cdn"
 <Link rel = "stylesheet" type = "text / css" href = "http: //cdn/index.css">
 <Img src = "http: //cdn/img/share.png" alt = "">
 ```
+
+
+### change log
+2016-01-04: support array config 
+
 ## More questions, please contact Ronin (roninliu@foxmail.com)
