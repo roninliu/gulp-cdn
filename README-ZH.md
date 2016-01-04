@@ -30,7 +30,7 @@ return gulp.src("./src/*.html")
 .pipe(gulp.dest("./dist/"))
 })
 ```
-或者数据配置
+或者数组配置
 ---
 ```javascript
 var gulp = require('gulp');
