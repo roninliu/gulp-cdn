@@ -63,6 +63,7 @@ cdn:"http://cdn2"
 <Img src = "http: //cdn/img/share.png" alt = "">
 ```
 
+see example[example](https://github.com/roninliu/gulp-cdn/tree/master/example "example")
 
 ### change log
 2016-01-04: support array config 

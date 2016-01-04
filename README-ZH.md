@@ -62,6 +62,7 @@ return gulp.src("./src/*.html")
 <link rel="stylesheet" type="text/css" href="http://cdn/index.css">
 <img src="http://cdn/img/share.png" alt="">
 ```
+	具体用法请参考[example](https://github.com/roninliu/gulp-cdn/tree/master/example "示例")
 
 ### change log
 2016-01-04: 支持数组的配置方式
